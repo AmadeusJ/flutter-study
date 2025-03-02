@@ -48,7 +48,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
-            ...currentQuestion.getShuffledAnswers().map((answer) {
+            ...currentQuestion.getShuffledAnswers.map((answer) {
               return AnswerButton(
                 onTap: () {
                   answerQuestion(answer);  // This is used to pass the selected answer to the parent widget

@@ -13,7 +13,7 @@ class Quiz extends StatefulWidget {
   }
 }
 
-class _QuizState extends State<Quiz> {
+class _QuizState extends State<Quiz> {  // '_' is used to make the class private
   // Widget? activeScreen; // '?' is used to make the variable nullable, activeScreen is not initialized yet
   var activeScreen = 'start-screen';
   final List<String> selectedAnswers = [];

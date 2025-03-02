@@ -12,7 +12,7 @@ class ResultScreen extends StatelessWidget {
   final List<String> selectedAnswers;
 
 
-  List<Map<String, Object>> getSummaryData() {
+  List<Map<String, Object>> get getSummaryData {  // 'get'은 함수를 호출할 때마다 새로운 값을 반환하는 것을 의미
     final List<Map<String, Object>> summary = [];
 
     for (var i = 0; i < selectedAnswers.length; i++) {
@@ -29,7 +29,7 @@ class ResultScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final summaryData = getSummaryData();
+    final summaryData = getSummaryData;
     final numTotalQuestions = questions.length;
     final numCorrectQuestions = summaryData.where((data) => data['user_answer'] == data['correct_answer']).length;
 
